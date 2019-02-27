@@ -1,0 +1,70 @@
+[% WRAPPER ui title = global.conference.name %]
+
+
+    <h2><t><de>Veranstaltungsort</de><en>Venue</en></t></h2>
+
+    <style type="text/css">#basicMap { /*width: 600px;*/ height: 500px; margin: 0;width: 100%; margin-bottom: 30px !important; }</style>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+    <p>
+		<t>
+			<de>
+				Der Deutsche Perl-Workshop 2019 findet an der
+				<a href="https://www.hm.edu/">Hochschule für Angewandte Wissenschaften München</a>,
+				Lothstraße 64, 80335 München
+				statt.
+				<br /><img src="images/aussenansicht_400.jpg" alt="Hochschule München, Vortragssaal vom aussen"><br/>
+				Mit öffentlichen Verkehrsmitteln erreicht man die Hochschule mit der Straßenbahn zur Lothstraße
+				(200m: Linien 20-22, ca. 10 Minuten ab Hauptbahnhof).  Die U-Bahn-Stationen Josephsplatz (U2 und U8),
+				Maillingerstraße und Stiglmeierplatz (beide U1 und U7) sind ca. 1km entfernt.
+			</de>
+			<en>
+				The German Perl Workshop 2019 will take place at
+				<a href="https://www.hm.edu/">Hochschule für Angewandte Wissenschaften München</a>,
+				Lothstraße 64, 80335 München.
+				<br /><img src="images/aussenansicht_400.jpg" alt="Hochschule München, view from the outside"><br/>
+				You can get there using public transportation by tram (routes 20-22) to Lothstraße, 200m from the
+				venue.  The underground stations Josephsplatz (U2 and U7), Maillingerstraße and Stiglmeierplatz
+				(both U1 and U7) are within 1km distance.
+			</en>
+		</t>
+    </p>
+    <p>
+		<t>
+            <de>Bei 50 oder mehr Interessenten können wir ein günstiges drei-Tages-Ticket
+                (13,80€) für den öffentlichen Nahverkehr in ganz München anbieten.
+            </de>
+            <en>If there are more than 50 subscribers, then we can offer a three-days-ticket
+                for public transportation in Munich (13.80€).
+            </em>
+		</t>
+	</p>
+<!--
+    <p>
+        <a href="hotels.html">
+            →
+            <t>
+                <de>Nahverkehr und Parken am Veranstaltungsort</de>
+                <en>Public transport and parking at venue</en>
+            </t>
+        </a>
+    </p>
+-->
+<!--
+    <div id="basicMap"></div>
+    <script type="text/javascript">
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik = new OpenLayers.Layer.OSM();
+        map.addLayer(mapnik);
+		var lonLat = new OpenLayers.LonLat(7.119581, 50.983874)
+			.transform(
+				new OpenLayers.Projection("EPSG:4326"),
+				map.getProjectionObject()
+		);
+        map.setCenter(lonLat, 16); // Zoom level
+      }
+      init();
+    </script>
+-->
+[% END %]

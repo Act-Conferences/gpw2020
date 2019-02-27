@@ -1,0 +1,216 @@
+[% WRAPPER ui title = global.conference.name %]
+<!-- validate this with
+     https://search.google.com/structured-data/testing-tool?hl=de
+-->
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "Deutscher Perl-Workshop, München 2019",
+  "url": "https://act.yapc.eu/gpw2019/",
+  "description": "Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.",
+  "startDate": "2019-03-06T09:00",
+  "endDate": "2019-03-08T19:00",
+  "location": {
+    "@type": "Place",
+    "name": "Hochschule München",
+    "sameAs": "https://www.hm.edu/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lothstr. 64",
+      "addressLocality": "München",
+      "postalCode": "D-80335",
+      "addressCountry": "Deutschland"
+    }
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 250,
+    "lowPrice": 50,
+    "offerCount": 3,
+    "offers": [{
+      "@type": "Offer",
+      "description": "Ticket",
+      "url": "https://act.yapc.eu/gpw2019/preise.html",
+      "price": "70",
+      "priceCurrency": "EUR"
+    },{
+      "@type": "Offer",
+      "description": "Firmenticket",
+      "url": "https://act.yapc.eu/gpw2019/preise.html",
+      "price": "250",
+      "priceCurrency": "EUR"
+    },{
+      "@type": "Offer",
+      "description": "Studententicket",
+      "url": "https://act.yapc.eu/gpw2019/preise.html",
+      "price": "50",
+      "priceCurrency": "EUR"
+    }]
+  }
+}
+</script>
+<h2>
+  <t>
+    <de>21. Deutscher Perl-Workshop 2019 M&uuml;nchen</de>
+    <en>21st German Perl Workshop 2019 in Munich</en>
+  </t>
+  <small class="text-muted dateaddon">
+    <t>
+      <de> vom 06. bis 08. März 2019</de>
+      <en> from 6th to 8th March 2019</en>
+    </t>
+  </small>
+</h2>
+
+<h3>
+  <t>
+    <de>Über den Deutschen Perl-Workshop 2019</de>
+    <en>About the German Perl Workshop conference 2019</en>
+  </t>
+</h3>
+<p>
+  <t>
+    <de>
+      Der Deutsche Perl-Workshop ist eine jährlich in Deutschland
+      stattfindende <strong>Open-Source-Konferenz für jedermann</strong>,
+      organisiert von der Community der <a href="perl.html">Programmiersprache Perl</a>.
+      Im Jahr 2019 beginnt er am Mittwoch, den 6. März 2019 um 09:00 Uhr und endet
+      am Freitag, den 8. März, um etwa 16:00 Uhr.
+    </de>
+    <en>
+      The German Perl Workshop is an <strong>Open Source conference for everyone</strong>,
+      organized by community of the <a href="perl.html">Perl Programming Language</a> yearly in Germany.
+      The 2019 edition will be from Wednesday, March 6th, 09:00 to Friday, March 8th, 16:00
+      in Munich.
+    </en>
+  </t>
+</p>
+<p>
+  <t>
+    <de>Die Vorträge werden überwiegend in Deutsch gehalten, Vorträge auf Englisch sind ebenfalls sehr willkommen.<br>
+    </de>
+    <en>
+      Most of the talks will be held in German, but talks in English are welcome as well of course.<br>
+    </en>
+  </t>
+</p>
+
+[% IF global.config.registration_open AND NOT global.request.user.has_registered %]
+<p>
+  <a href="[% make_uri('register') %]" class="btn btn-primary btn-block" role="button"[%# active btn-gpw aria-pressed="true" %]>
+    <t>
+      <de>Jetzt für den Workshop anmelden</de>
+      <en>Signup for attendance now</en>
+    </t>
+  </a>
+</p>
+[% END %]
+[% IF global.config.talks_submissions_open %]
+<h3>
+  <t>
+    <de>Wir suchen Dich als Vortragenden</de>
+    <en>We want you as a speaker</en>
+  </t>
+</h3>
+<p>
+  <a href="[% make_uri('newtalk') %]" class="btn btn-primary btn-block" role="button">
+    <t>
+      <de>Vortrag einreichen</de>
+      <en>Submit a talk</en>
+    </t>
+  </a>
+</p>
+[% END %]
+<!--
+<p>
+  <a href="[% make_uri('wanted.html') %]" class="btn btn-primary btn-block" role="button"[%# active btn-gpw aria-pressed="true" %]>
+    <t>
+      <de>Vorschläge für Vorträge</de>
+      <en>Talk suggestions</en>
+    </t>
+  </a>
+</p>
+-->
+<h3>
+  <t>
+    <de>Wichtige Informationen</de>
+    <en>Important information</en>
+  </t>
+</h3>
+<ul>
+  <li>
+    <t>
+      <de>Details zum</de>
+      <en>About the</en>
+    </t>
+    <a href="venue.html">
+      <t>
+        <de>Veranstaltungsort</de>
+        <en>venue</en>
+      </t>
+    </a>
+  </li>
+  <li>
+    <a href="preise.html"><t><de>Preisübersicht</de><en>Pricing</en></t></a>
+  </li>
+  <li>
+    <t>
+      <de>
+        Auch dieses Jahr
+        <a href="social_event.html">laden wir die Teilnehmer zu einem gemeinsamen Abendessen ein</a>.
+      </de>
+      <en>
+        Following our tradition, <a href="social_event.html">we invite all attendees to a diner.</a>
+      </en>
+    </t>
+  </li>
+  <li>Extras:
+    <a href="wiki?node=VorabendTreffen">
+      <t>
+        <de>Vorabend-Treffen</de>
+        <en>Pre-conference meeting</en>
+      </t>
+    </a>
+  </li>
+</ul>
+<p>
+  <t>
+    <de>E-Mail-Kontakt</de>
+    <en>E-mail contact</en>
+  </t>: <a href="mailto:orga2019@german-perl-workshop.de" class="email icon-envelope">mailto:orga2019@german-perl-workshop.de</a>
+</p>
+
+
+[%
+    news = global.news(3);
+    IF news.size > 2;
+        more = news.pop;
+    END;
+%]
+[% IF news.size %]
+<h3>
+  <t><de>Aktuellste Neuigkeiten</de><en>Latest news</en></t>
+  <a href="atom/[% global.request.language %].xml"><img src="images/feed-icon-14x14.png" alt="Atom feed"></a>
+</h3>
+<div class="newsblock clearfixafter">
+[% FOREACH item = news %]
+  <article class="news-entry col-xs-12">
+    <header class="news-header">
+      <h4>
+        <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+        <span class="news-title">[% item.title %]</span>
+      </h4>
+    </header>
+    <section class="news-text">
+      [% item.content %]
+    </section>
+  </article>
+  [% END %]
+[% END %]
+[% IF more %]
+  <p class="pull-right"><a href="news" class="news-link"><t><de>Alle Neuigkeiten</de><en>All news</en></t></a></p>
+</div>
+[% END %]
+
+[% END %]
