@@ -9,7 +9,7 @@
     <title>[% global.conference.name %]</title>
     <meta name="description"      content="<t><de>Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.</de><en>The German Perl Workshop is a conference about the Perl Programming Language. It is organized by Perl developers.</en></t>">
     <meta name="keywords"         content="Perl,Workshop,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
-    <meta name="application-name" content="ACT GPW2019">
+    <meta name="application-name" content="ACT GPW2020">
     <meta name="author"           content="Frankfurt Perlmongers">
     <meta name="generator"        content="act.yapc.eu">
     <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
@@ -82,8 +82,9 @@
             <fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
               <label for="archiv"><t><de>Workshop</de><en>Conference</en></t>:</label>    
               <select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
-                <option value="index.html" selected="selected">2018</option>
-		<option value="https://act.yapc.eu/gpw2017/">2017</option>
+		        <option value="https://act.yapc.eu/gpw2019/">2019</option>
+		        <option value="https://act.yapc.eu/gpw2018/">2018</option>
+		        <option value="https://act.yapc.eu/gpw2017/">2017</option>
                 <option value="https://act.yapc.eu/gpw2016/">2016</option>
                 <option value="https://act.yapc.eu/gpw2015/">2015</option>
                 <option value="https://act.yapc.eu/gpw2014/">2014</option>
@@ -113,31 +114,6 @@
             [% PROCESS menu %]
           </ul>
         </nav>
-        <!--
-        <section class="sidesponsors">
-          <h2><t><de>Gold-Sponsoren</de><en>Gold sponsors</en></t></h2>
-          <ul class="sidesponsors">
-            <li><a href="http://www.delti.com/" title="Delticom AG"><img src="images/logo-delticom.gif" alt="Delticom AG"></a></li>
-            <li><a href="http://www.profihost.com/" title="Profihost AG"><img src="images/logo-profihost.png" alt="Profihost AG"></a></li>
-          </ul>
-        </section>
-        <section class="sidesponsors">
-          <h2><t><de>Silber-Sponsoren</de><en>Silver sponsors</en></t></h2>
-          <ul class="sidesponsors">
-            <li><a href="javascript:;">Link</a></li>
-            <li><a href="javascript:;">Link</a></li>
-            <li><a href="javascript:;">Link</a></li>
-          </ul>
-        </section>
-        <section class="sidesponsors">
-          <h2><t><de>Bronze-Sponsoren</de><en>Bronce sponsors</en></t></h2>
-          <ul class="sidesponsors">
-            <li><a href="javascript:;">Link</a></li>
-            <li><a href="javascript:;">Link</a></li>
-            <li><a href="javascript:;">Link</a></li>
-          </ul>
-        </section>
-        -->
         <section>
           <h2><t><de>Andere ACT Konferenzen</de><en>Other ACT conferences</en></t></h2>
           <ul class="mainnav">
