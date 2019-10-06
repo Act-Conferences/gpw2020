@@ -83,7 +83,7 @@
                 <ul class="dropdown-menu">
 
                     <li>
-                        <a href="[% make_uri('schedule') %]"><t><de>Programm 2019</de><en>Schedule 2019</en></t></a>
+                        <a href="[% make_uri('schedule') %]"><t><de>Programm 2020</de><en>Schedule 2020</en></t></a>
                         <ul>
                             <li class="lv3">
                                 <a href="[% make_uri('timetable.ics') %]"><t><de>als iCal exportieren</de><en>iCal export</en></t></a>
