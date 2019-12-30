@@ -1,7 +1,6 @@
 [% WRAPPER ui title = global.conference.name %]
 [%- PROCESS macros_19  # defines phone_19, email_19 and booking_19 -%]
-<h2><t><de>Hotels in der Nähe</de><en>Hotels near the Venue</en></t></h2>
-
+<h2><t><de>Hotels in der Nähe</de><en>Hotels near the venue and city</en></t></h2>
 <!--
 <h3>Hotel Europa</h3>
 <p>Dachauer Straße 115, 80335 München</p>
@@ -11,17 +10,11 @@
   [% email_19('info@hotel-europa.de') %]
   [% booking_19('https://www.booking.com/hotel/de/europamu.de.html') %]
 </p>
-<p>
-  <t><de>Entfernung zum Veranstaltungsort</de><en>Distance to venue</en></t>: 500m
-  <br />
-  <t><de>Entfernung zum Stadtzentrum</de><en>Distance to town centre</en></t>: 3km
-</p>
-<p>
-  <t>
-    <de>Hinweis: Kein Frühstücksangebot in der Zeit des Workshops!</de>
-    <en>Hint: No breakfast offering during the workshop!</en>
-  </t>
-</p>
 -->
-
+<p><a href="http://www.booking.com/hotel/de/holiday-inn-express-erlangen.de.html" target="_blank">Holiday Inn Express</a></p>
+<p><a href="http://www.booking.com/hotel/de/der-graue-wolf.html" target="_blank">Der Graue Wolf</a></p>
+<p><a href="http://www.fraenkischer-hof-erlangen.de/" target="_blank">Fränkischer Hof</a></p>
+<p><a href="http://www.booking.com/hotel/de/altmanns-stube.html" target="_blank">Altmanns Stube</a></p>
+<p><a href="http://www.hotelchen-am-theater.de/" target="_blank">Hotelchen am Theater</a></p>
+<p><a href="http://www.rokokohaus.de/" target="_blank">Rokokohaus</a></p>
 [% END %]
