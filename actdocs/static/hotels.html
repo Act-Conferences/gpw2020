@@ -1,6 +1,6 @@
 [% WRAPPER ui title = global.conference.name %]
 [%- PROCESS macros_19  # defines phone_19, email_19 and booking_19 -%]
-<h2><t><de>Hotels in der Nähe</de><en>Hotels near the venue and city</en></t></h2>
+<h2><t><de>Hotels in der Nähe</de><en>Hotels near the city</en></t></h2>
 <!--
 <h3>Hotel Europa</h3>
 <p>Dachauer Straße 115, 80335 München</p>
@@ -11,10 +11,42 @@
   [% booking_19('https://www.booking.com/hotel/de/europamu.de.html') %]
 </p>
 -->
-<p><a href="http://www.booking.com/hotel/de/holiday-inn-express-erlangen.de.html" target="_blank">Holiday Inn Express</a></p>
-<p><a href="http://www.booking.com/hotel/de/der-graue-wolf.html" target="_blank">Der Graue Wolf</a></p>
-<p><a href="http://www.fraenkischer-hof-erlangen.de/" target="_blank">Fränkischer Hof</a></p>
-<p><a href="http://www.booking.com/hotel/de/altmanns-stube.html" target="_blank">Altmanns Stube</a></p>
-<p><a href="http://www.hotelchen-am-theater.de/" target="_blank">Hotelchen am Theater</a></p>
-<p><a href="http://www.rokokohaus.de/" target="_blank">Rokokohaus</a></p>
+<ul>
+  <li><a href="http://www.booking.com/hotel/de/holiday-inn-express-erlangen.de.html" target="_blank">Holiday Inn Express</a></li>
+  <li><a href="http://www.booking.com/hotel/de/der-graue-wolf.html" target="_blank">Der Graue Wolf</a></li>
+  <li><a href="http://www.fraenkischer-hof-erlangen.de/" target="_blank">Fränkischer Hof</a></li>
+  <li><a href="http://www.booking.com/hotel/de/altmanns-stube.html" target="_blank">Altmanns Stube</a></li>
+  <li><a href="http://www.hotelchen-am-theater.de/" target="_blank">Hotelchen am Theater</a></li>
+  <li><a href="http://www.rokokohaus.de/" target="_blank">Rokokohaus</a></li>
+</ul>
+<p>
+  <t>
+    <de>Wenn Erlangen ausgebucht ist:</de>
+    <en>In case of Erlangen is fully booked:</en>
+  </t>
+</p>
+<ul>
+  <li><a href="http://www.booking.com/hotel/de/arivo-forchheim-forchheim.de.html" target="_blank">Arivo Forchheim</a></li>
+</ul>
+<h2>
+  <t>
+    <de>Anreise</de>
+    <en>Arrivals</en>
+  </t>
+</h2>
+<ul>
+  <li>
+    <t>
+      <de>
+        <a href="https://de.wikipedia.org/wiki/N%C3%BCrnberg_Hauptbahnhof" target="_blank">Nürnberg Hauptbahnhof</a>
+      </de>
+      <en>
+        <a href="https://en.wikipedia.org/wiki/Nuremberg_Central_Station" target="_blank">Nuremberg Central Station</a>
+      </en>
+    </t>
+  </li>
+  <li><a href="https://de.wikipedia.org/wiki/Erlangen#Infrastruktur_und_Verkehr" target="_blank">Erlangen Transport</a></li>
+  <li><a href="https://www.airport-nuernberg.de/" target="_blank">Airport Nürnberg</a></li>
+  <li><a href="https://www.flixbus.de/fernbus/erlangen" target="_blank">Flixbus Erlangen</a></li>
+</ul>
 [% END %]
