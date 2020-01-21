@@ -130,7 +130,7 @@
 
     <footer id="footer">
       <p class="links">
-        <a class="link first" href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a>
+        <a class="link first" href="impressum.html"><t><de>Impressum und Datenschutzerklärung</de><en>Imprint and Data Protection</en></t></a>
         <a class="link last email icon-envelope" href="mailto:registration@german-perl-workshop.de" title="<t><de>Kontakt</de><en>Contact</en></t>">registration@german-perl-workshop.de</a>
       </p>
     </footer>
