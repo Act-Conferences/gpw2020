@@ -61,14 +61,33 @@ body.fixed-header #header {
   max-height: 72px; 
   margin-top: 0;
 }
+#logo-venue {
+  float: left;
+  background: transparent url(../images/FAU_rgb.jpg) left top no-repeat;
+  background-size: contain;
+  max-width: 165px;
+  min-height: 42px;
+  max-height: 72px;
+  margin-top: 0;
+}
+
 @media(min-width:768px){
   #logo {
     min-height: 58px;
     margin-top:5px;
   }
+  #logo-venue {
+    min-height: 58px;
+    margin-top:5px;
+  }
+
 }
 @media(min-width:992px){
   #logo {
+    min-height: 72px;
+    margin-top:5px;
+  }
+  #logo-venue {
     min-height: 72px;
     margin-top:5px;
   }

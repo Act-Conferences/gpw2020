@@ -40,6 +40,7 @@
     <header id="header" class="block rowx">
       <div class="headerContent col-xs-12 no-float">
         <a class="homelink clearfixafter" href="index.html" title="[% global.conference.name %]">
+          <div id="logo-venue" class="col-xs-2"></div>
           <div id="logo" class="col-xs-3"></div>
           <h1 id="site_name" class="col-xs-7">[% global.conference.name %]</h1>
         </a>
@@ -129,7 +130,7 @@
 
     <footer id="footer">
       <p class="links">
-        <a class="link first" href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a>
+        <a class="link first" href="impressum.html"><t><de>Impressum und Datenschutzerklärung</de><en>Imprint and Data Protection</en></t></a>
         <a class="link last email icon-envelope" href="mailto:registration@german-perl-workshop.de" title="<t><de>Kontakt</de><en>Contact</en></t>">registration@german-perl-workshop.de</a>
       </p>
     </footer>
